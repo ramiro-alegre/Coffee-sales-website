@@ -1,0 +1,617 @@
+                                       $header-navbar-color: #DDB25A;
+                                       @media (max-width: 1790px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           width: 450px;
+                                                           height: 450px;
+                                                       }
+                                                       .fondo {
+                                                           height: 1400px;
+                                                           clip-path: circle(400px at right 600px);
+                                                       }
+                                                   }
+                                                   .productos {
+                                                       align-items: center;
+                                                   }
+                                                   .nosotros {
+                                                       p {
+                                                           font-size: 30px;
+                                                       }
+                                                       .texto-imagen-nosotros {
+                                                           .imagen-nosotros {
+                                                               right: 50px;
+                                                               img {
+                                                                   height: 350px;
+                                                                   width: 350px;
+                                                               }
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 1500px) {
+                                           body {
+                                               main {
+                                                   .cafe-image {
+                                                       width: 450px;
+                                                       height: 450px;
+                                                   }
+                                                   .fondo {
+                                                       height: 1400px;
+                                                       clip-path: circle(500px at right 700px);
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 1400px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .texto-image {
+                                                           h2 {
+                                                               font-size: 70px;
+                                                           }
+                                                           .texto {
+                                                               max-width: 700px;
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 1300px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           width: 400px;
+                                                           height: 400px;
+                                                       }
+                                                       .fondo {
+                                                           height: 1400px;
+                                                           clip-path: circle(350px at right 550px);
+                                                       }
+                                                   }
+                                                   .nosotros {
+                                                       .texto-imagen-nosotros {
+                                                           .texto-nosotros {
+                                                               padding: 0px 20px;
+                                                           }
+                                                           .imagen-nosotros {
+                                                               right: 50px;
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 1200px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .texto-image {
+                                                           .texto {
+                                                               max-width: 600px;
+                                                           }
+                                                       }
+                                                   }
+                                                   .nosotros {
+                                                       h2 {
+                                                           font-size: 70px;
+                                                       }
+                                                       .texto-imagen-nosotros {
+                                                           .texto-nosotros {
+                                                               padding: 0px 40px;
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 1100px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           width: 350px;
+                                                           height: 350px;
+                                                       }
+                                                       .fondo {
+                                                           height: 900px;
+                                                           clip-path: circle(300px at right 500px);
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 1000px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .texto-image {
+                                                           h2 {
+                                                               font-size: 60px;
+                                                           }
+                                                           .texto {
+                                                               max-width: 450px;
+                                                               font-size: 25px;
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 900px) {
+                                           [id] {
+                                               scroll-margin-top: 12ex;
+                                           }
+                                           body {
+                                               header {
+                                                   background-color: $header-navbar-color;
+                                                   width: 100%;
+                                                   position: fixed;
+                                                   z-index: 999;
+                                                   .logo {
+                                                       left: 40px;
+                                                       bottom: 10px;
+                                                   }
+                                                   .display-none {
+                                                       display: none;
+                                                   }
+                                                   .bars-navbar,
+                                                   .x-navbar {
+                                                       position: absolute;
+                                                       display: block;
+                                                       top: 30px;
+                                                       left: 93%;
+                                                   }
+                                                   .x-navbar {
+                                                       display: block;
+                                                       z-index: 999;
+                                                   }
+                                                   .navbar {
+                                                       z-index: 999;
+                                                       background-color: $header-navbar-color;
+                                                       width: 100%;
+                                                       position: absolute;
+                                                       top: -500px;
+                                                       .lista {
+                                                           flex-direction: column;
+                                                           .navbar-opciones {
+                                                               padding: 0px;
+                                                               margin: 15px 10px;
+                                                               a:hover {
+                                                                   width: 100%;
+                                                                   border: 0px;
+                                                                   background-color: inherit;
+                                                                   border-radius: 0px;
+                                                               }
+                                                               a {
+                                                                   width: 100%;
+                                                                   display: block;
+                                                               }
+                                                           }
+                                                       }
+                                                   }
+                                                   .navbar-open {
+                                                       top: 0;
+                                                   }
+                                               }
+                                               main {
+                                                   padding-top: 10vh;
+                                                   .inicio {
+                                                       height: 90vh;
+                                                       .cafe-image {
+                                                           width: 300px;
+                                                           height: 300px;
+                                                       }
+                                                       .fondo {
+                                                           height: 700px;
+                                                           clip-path: circle(250px at right 450px);
+                                                       }
+                                                       .texto-image {
+                                                           h2 {
+                                                               font-size: 50px;
+                                                           }
+                                                           .texto {
+                                                               font-size: 30px;
+                                                               max-width: 400px;
+                                                           }
+                                                       }
+                                                   }
+                                                   .nosotros {
+                                                       h2 {
+                                                           font-size: 60px;
+                                                       }
+                                                       .texto-imagen-nosotros {
+                                                           .texto-nosotros {
+                                                               padding: 0px 30px;
+                                                               p {
+                                                                   font-size: 25px;
+                                                               }
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 800px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       height: 80vh;
+                                                       .cafe-image {
+                                                           right: 20px;
+                                                           top: 170px;
+                                                           img {
+                                                               height: 200px;
+                                                               width: 200px;
+                                                           }
+                                                       }
+                                                       .fondo {
+                                                           display: none;
+                                                       }
+                                                       .texto-image {
+                                                           .texto {
+                                                               max-width: 650px;
+                                                           }
+                                                       }
+                                                   }
+                                                   .nosotros {
+                                                       .texto-imagen-nosotros {
+                                                           .texto-nosotros {
+                                                               padding: 0px 30px;
+                                                               p {
+                                                                   font-size: 25px;
+                                                               }
+                                                           }
+                                                           .imagen-nosotros {
+                                                               img {
+                                                                   height: 300px;
+                                                                   width: 300px;
+                                                               }
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 750px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           right: 50px;
+                                                           width: 200px;
+                                                           height: 200px;
+                                                       }
+                                                   }
+                                                   .nosotros {
+                                                       .texto-imagen-nosotros {
+                                                           flex-direction: column;
+                                                           .texto-nosotros {
+                                                               padding: 0px;
+                                                               width: 95%;
+                                                           }
+                                                           .imagen-nosotros {
+                                                               right: 20px;
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 680px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .texto-image {
+                                                           left: 50px;
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 635px) {
+                                           body {
+                                               header {
+                                                   .bars-navbar,
+                                                   .x-navbar {
+                                                       left: 90%;
+                                                   }
+                                               }
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           right: 0px;
+                                                       }
+                                                   }
+                                                   .productos {
+                                                       height: 130vh;
+                                                       .h2-productos {
+                                                           font-size: 25px;
+                                                       }
+                                                       .todo-productos {
+                                                           .top3-productos {
+                                                               li {
+                                                                   h3 {
+                                                                       text-align: center;
+                                                                   }
+                                                                   .image-texto {
+                                                                       flex-direction: column;
+                                                                       align-items: center;
+                                                                       .texto {
+                                                                           margin: 0px;
+                                                                       }
+                                                                   }
+                                                               }
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                               footer {
+                                                   .redes-sociales {
+                                                       width: 5vw;
+                                                       ul {
+                                                           flex-direction: column;
+                                                           li {
+                                                               margin: 10px 0px;
+                                                           }
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 590px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           width: 150px;
+                                                           height: 150px;
+                                                           top: 220px;
+                                                           right: 0px;
+                                                           img {
+                                                               width: 150px;
+                                                               height: 150px;
+                                                           }
+                                                       }
+                                                   }
+                                                   .nosotros {
+                                                       .h2-nosotros {
+                                                           top: -120px;
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 546px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 140vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 540px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           display: none;
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 520px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       .h2-productos {
+                                                           font-size: 20px;
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       //Media query ALTURA
+                                       @media (max-height: 930px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 115vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 880px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 115vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 840px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 120vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 800px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 125vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 770px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 130vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 750px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       height: 100vh;
+                                                   }
+                                                   .nosotros {
+                                                       height: 90vh;
+                                                       .h2-nosotros {
+                                                           top: -150px;
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 715px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       height: 90vh;
+                                                   }
+                                                   .productos {
+                                                       height: 140vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 660px) {
+                                           body {
+                                               main {
+                                                   .inicio {
+                                                       .cafe-image {
+                                                           top: 130px;
+                                                       }
+                                                       .texto-image {
+                                                           top: 195px;
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       //Medidas especiales
+                                       @media (max-height: 927px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 135vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 880px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 145vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 820px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 155vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 770px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 165vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 720px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 175vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 680px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 185vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 640px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 195vh;
+                                                   }
+                                               }
+                                           }
+                                       }
+                                       
+                                       @media (max-height: 610px) and (max-width: 635px) {
+                                           body {
+                                               main {
+                                                   .productos {
+                                                       height: 205vh;
+                                                   }
+                                                   .nosotros {
+                                                       .h2-nosotros {
+                                                           top: -140px;
+                                                       }
+                                                   }
+                                               }
+                                           }
+                                       }

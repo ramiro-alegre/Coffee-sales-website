@@ -1,0 +1,335 @@
+$color-marron: #804000;
+$fondo-body:#EAEAEA;
+$fondo-productos: #F4F4F4;
+$color-hover-button: #AF5F20;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Arial';
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    header {
+        background-color: $fondo-body;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo {
+            position: relative;
+            left: 100px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .bars-navbar,
+        .x-navbar {
+            height: 40px;
+            width: 40px;
+            i {
+                font-size: 40px;
+            }
+        }
+        .bars-navbar,
+        .x-navbar-none {
+            display: none;
+        }
+        .navbar {
+            .lista {
+                display: flex;
+                flex-direction: row;
+                .navbar-opciones {
+                    font-size: 20px;
+                    margin: 35px 10px;
+                    padding: 10px 0px;
+                    border-radius: 200px;
+                    a {
+                        color: black;
+                        padding: 15px 30px;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    a:hover {
+                        border: 1px solid $color-marron;
+                        background-color: $color-hover-button;
+                        border-radius: 200px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        //Section inicio 
+        .inicio {
+            background-color: $fondo-body;
+            height: 88vh;
+            .cafe-image {
+                position: absolute;
+                z-index: 3;
+                right: 50px;
+                top: 200px;
+                width: 600px;
+                height: 600px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    transform: rotateY(500deg);
+                }
+            }
+            .fondo {
+                position: absolute;
+                top: 0px;
+                right: 0;
+                z-index: 2;
+                width: 600px;
+                height: 1400px;
+                clip-path: circle(600px at right 800px);
+                background-color: $color-marron;
+            }
+            .texto-image {
+                position: absolute;
+                top: 250px;
+                left: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h2 {
+                    text-align: start;
+                    font-size: 90px;
+                }
+                .h2-juntos {
+                    display: flex;
+                    flex-direction: row;
+                    .lorem {
+                        margin-left: 10px;
+                        color: $color-marron
+                    }
+                }
+                .texto {
+                    font-size: 30px;
+                    max-width: 800px;
+                    height: auto;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: black;
+                    width: 110px;
+                    height: 50px;
+                    border-radius: 40px;
+                    margin-top: 8px;
+                    padding: 8px 20px;
+                    background-color: $color-marron;
+                }
+                a:hover {
+                    background-color: $color-hover-button;
+                }
+            }
+        }
+        //Section productos 
+        .productos {
+            height: 100vh;
+            background-color: $fondo-productos;
+            display: flex;
+            flex-direction: column;
+            .h2-productos {
+                width: 90vw;
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+                font-size: 30px;
+                text-align: start;
+            }
+            .todo-productos {
+                height: 100%;
+                .button {
+                    width: 90vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: black;
+                        width: 110px;
+                        height: 50px;
+                        border-radius: 40px;
+                        margin-top: 30px;
+                        padding: 8px 20px;
+                        background-color: $color-marron;
+                    }
+                    a:hover {
+                        background-color: $color-hover-button;
+                    }
+                }
+                .top3-productos {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding-left: 10px;
+                    max-width: 90vw;
+                    h3 {
+                        font-size: 30px;
+                        margin: 15px 0px;
+                    }
+                    .image {
+                        img {
+                            border-radius: 10px;
+                            width: 280px;
+                            height: 180px;
+                        }
+                    }
+                    .texto {
+                        font-size: 25px;
+                        margin-left: 10px;
+                    }
+                    .cafe {
+                        max-width: 900px;
+                        .image-texto {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+        //Section nosotros
+        .nosotros {
+            height: 70vh;
+            background-color: $fondo-body;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .h2-nosotros {
+                text-align: center;
+                font-size: 50px;
+                position: relative;
+                top: -100px;
+            }
+            .texto-imagen-nosotros {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                height: 30vh;
+                .texto-nosotros {
+                    width: 900px;
+                    height: 30vh;
+                    font-size: 35px;
+                    display: flex;
+                    align-items: center;
+                }
+                .imagen-nosotros {
+                    position: relative;
+                    right: 70px;
+                    img {
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+    //Footer
+    footer {
+        height: 30vh;
+        background-color: #E0E0E0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .redes-sociales {
+            width: 20vh;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 30px;
+                    a {
+                        border-radius: 100%;
+                        border: 1px solid #111;
+                        color: gray;
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                    .facebook {
+                        padding: 5px 10px;
+                    }
+                    .instagram {
+                        padding: 5px 9px;
+                    }
+                    .twitter {
+                        padding: 5px 8px;
+                    }
+                    .youtube {
+                        padding: 5px 7px;
+                    }
+                    .facebook:hover {
+                        color: $fondo-body;
+                        border-radius: 100%;
+                        background-color: #3b5998;
+                    }
+                    .instagram:hover {
+                        color: $fondo-body;
+                        border-radius: 100%;
+                        background-color: #CA2E98;
+                    }
+                    .twitter:hover {
+                        color: $fondo-body;
+                        border-radius: 100%;
+                        background-color: #00acee;
+                    }
+                    .youtube:hover {
+                        color: $fondo-body;
+                        border-radius: 100%;
+                        background-color: #c4302b;
+                    }
+                }
+            }
+        }
+        .lista-footer {
+            padding: 0px 10px;
+            .h2-footer {
+                font-size: 15px;
+                border-bottom: 1px solid #111;
+                padding-bottom: 5px;
+            }
+            ul {
+                padding-top: 5px;
+                li {
+                    padding: 3px 0px;
+                    a {
+                        color: black;
+                    }
+                    a:hover {
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
